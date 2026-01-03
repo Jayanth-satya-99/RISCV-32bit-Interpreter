@@ -1,0 +1,8 @@
+addi x6 , x0 , 6
+addi x10 , x0 , 1
+addi x11 , x0 , 1
+blt x6 , x11 , 4
+mul x10 , x10 , x11
+addi x11 , x11 , 1
+jal x0 , -3
+#result is in x10

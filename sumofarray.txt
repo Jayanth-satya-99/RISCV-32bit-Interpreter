@@ -1,0 +1,11 @@
+addi x5 , x0, 0 
+addi x6 , x0 , 5
+addi x10 , x0 , 0 
+addi x11 ,x0 , 0 
+bge x11 ,x6 , 6
+add x12 , x5 ,x11
+lw x13,0(x12)
+add x10 , x10 , x13
+addi x11 ,x11 , 1
+jal x0 ,-5 
+#output in x10
